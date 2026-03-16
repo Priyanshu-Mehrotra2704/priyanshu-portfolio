@@ -37,7 +37,7 @@ function SoftSkillsSection({ isActive }) {
             <span>[ NEURAL_SYNERGY ]</span>
           </div>
           <h2>Tactical Soft Skills</h2>
-          <div className="skill-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
+          <div className="skill-grid" style={{ gap: '20px' }}>
             {softSkills.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="skill-box">
                 <Icon />

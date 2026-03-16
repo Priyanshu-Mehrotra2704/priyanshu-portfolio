@@ -10,6 +10,7 @@ function ProjectsSection({ isActive }) {
             <span>[ LOG_01 ]</span>
           </div>
           <h3>EduLens</h3>
+          <a href='https://edu-lens-eta.vercel.app/login'>Link to Project</a>
           <p>
             AI-powered student performance predictor. Developed models to detect weak areas using
             attendance, past scores, and topic-wise progress. Features real-time dashboards and
@@ -25,6 +26,8 @@ function ProjectsSection({ isActive }) {
             <span>[ LOG_02 ]</span>
           </div>
           <h3>Simulator Resource Allocator</h3>
+          <a href="https://github.com/LusmicSam/-Simulator_Resource_Allocation">Link to Project</a>
+
           <p>
             Interactive RAG Simulator with real-time process visualization. Implemented Banker's
             Algorithm for deadlock detection and added ML-based prediction modules.
@@ -43,6 +46,8 @@ function ProjectsSection({ isActive }) {
               display: 'flex',
               justifyContent: 'space-around',
               alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '10px',
               height: '100%',
             }}
           >

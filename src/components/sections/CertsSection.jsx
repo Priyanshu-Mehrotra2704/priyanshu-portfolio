@@ -5,7 +5,6 @@ import { ShieldCheck } from 'lucide-react'
 const certifications = [
   'A GUIDE TO MACHINE LEARNING WITH DATA SCIENCE - CIPHERSCHOOLS',
   'DATA STRUCTURE AND ALGORITHM USING C++ - CIPHERSCHOOLS',
-  'LEETCODE 100 DAYS BADGE - PROBLEM SOLVING DEDICATION',
 ]
 
 function CertsSection({ isActive }) {

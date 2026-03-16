@@ -36,7 +36,7 @@ function CoreSkillsSection({ isActive }) {
             <span>[ INTEL_CORE ]</span>
           </div>
           <h2>Intelligence Capability Matrix</h2>
-          <div className="skill-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
+          <div className="skill-grid" style={{ gap: '20px' }}>
             {coreSkills.map((skill) => (
               <div
                 key={skill.id}

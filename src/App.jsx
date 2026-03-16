@@ -18,15 +18,15 @@ import ContactSection from './components/sections/ContactSection'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const navItems = [
-  { label: '00.DOCK', index: 0 },
-  { label: '01.BIO', index: 1 },
-  { label: '02.CORE', index: 2 },
-  { label: '03.OPS', index: 3 },
-  { label: '04.RANK', index: 4 },
-  { label: '05.XP', index: 5 },
-  { label: '06.TOOL', index: 6 },
-  { label: '07.SOFT', index: 7 },
-  { label: '08.LINK', index: 8 },
+  // { label: '00.DOCK', index: 0 },
+  // { label: '01.BIO', index: 1 },
+  // { label: '02.CORE', index: 2 },
+  // { label: '03.OPS', index: 3 },
+  // { label: '04.RANK', index: 4 },
+  // { label: '05.XP', index: 5 },
+  // { label: '06.TOOL', index: 6 },
+  // { label: '07.SOFT', index: 7 },
+  // { label: '08.LINK', index: 8 },
 ]
 
 const stopsZ = [0, 250, 500, 800, 1100, 1500, 1900, 2300, 2700]
@@ -75,9 +75,8 @@ function App() {
   }, [])
 
   const handleNavClick = (index) => {
-    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
-    const scrollPos = (index / 8) * scrollHeight
-    gsap.to(window, { scrollTo: scrollPos, duration: 0.8, ease: 'expo.out' })
+    const scrollPos = index * window.innerHeight;
+    window.scrollTo({ top: scrollPos, behavior: 'smooth' });
   }
 
   return (

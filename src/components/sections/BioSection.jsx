@@ -10,7 +10,6 @@ const skills = [
   { icon: Cpu, label: 'ML Algorithms' },
   { icon: Binary, label: 'Data Structures' },
   { icon: Terminal, label: 'Scikit-Learn' },
-  { icon: Users, label: 'Team Leadership' },
 ]
 
 function BioSection({ isActive }) {

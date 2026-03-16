@@ -22,10 +22,8 @@ function ContactSection({ isActive }) {
           </div>
           <h2>Signal Path</h2>
           <div
+            className="contact-info-grid"
             style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '40px',
               marginBottom: '20px',
             }}
           >
@@ -42,25 +40,7 @@ function ContactSection({ isActive }) {
               LINKEDIN: <span className="accent-text">linkedin.com/in/priyanshu-mehrotra/</span>
             </div>
           </div>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="ENTITY_IDENTIFIER"
-              className="terminal-input"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            />
-            <textarea
-              placeholder="TRANSMISSION_DATA"
-              rows={3}
-              className="terminal-input"
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            />
-            <button type="submit" className="terminal-btn">
-              INITIATE CONNECTION
-            </button>
-          </form>
+
         </div>
       </div>
     </Section>
