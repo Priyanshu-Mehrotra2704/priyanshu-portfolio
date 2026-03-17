@@ -13,6 +13,7 @@ function Navbar({ items, activeIndex, onNavClick }) {
             {item.label}
           </button>
         ))}
+        <a href="https://drive.google.com/file/d/1Rnugw0wUqh-sXCtfEUwBAqgraN9_5EJl/view?usp=sharing">My Resume</a>
       </div>
     </nav>
   )

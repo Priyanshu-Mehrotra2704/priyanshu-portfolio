@@ -25,6 +25,8 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+
+
 .mono {
   font-family: 'Share Tech Mono', monospace;
 }
@@ -409,6 +411,19 @@ p {
 }
 
 .terminal-btn {
+  background: var(--accent);
+  color: black;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Share Tech Mono', monospace;
+  transition: 0.3s;
+}
+a{
+  text-decoration: none;
   background: var(--accent);
   color: black;
   border: none;
